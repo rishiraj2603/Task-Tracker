@@ -1,6 +1,7 @@
 import React from "react";
 import Sorting from "./Sorting";
 import TaskAdd from "./TaskAdd";
+import TaskContainer from "./TaskContainer";
 
 const BottomContainter = () => {
   const status = [
@@ -18,7 +19,7 @@ const BottomContainter = () => {
       </div>
       <div className="grid gap-2 grid-row-5">
         {status.map((item) => {
-          return <Container status={item} />;
+          return <Container status={item} key={item[0]} />;
         })}
       </div>
     </div>
@@ -27,7 +28,6 @@ const BottomContainter = () => {
 
 const Container = ({ status }) => {
   const color = status[1];
-  console.log("🚀 ~ Container ~ color:", color);
   return (
     <div className="min-w-full p-4 rounded-2xl h-96">
       <center
@@ -36,6 +36,7 @@ const Container = ({ status }) => {
       >
         {status[0]}
       </center>
+      {status[0] === "Pending" ? <TaskContainer></TaskContainer> : " "}
     </div>
   );
 };

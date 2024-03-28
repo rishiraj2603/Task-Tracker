@@ -19,7 +19,7 @@ const Sorting = () => {
           placeholder="Assigne Name"
         />
         <div>
-          <label for="priority">Priority: </label>
+          <label htmlFor="priority">Priority: </label>
           <select name="priority" id="priority">
             <option value="In Progress">In Progress</option>
             <option value="Pending">Pending</option>
