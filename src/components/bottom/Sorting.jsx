@@ -40,11 +40,9 @@ const Sorting = () => {
         <div>
           <label for="priorityLevel">Priority Level: </label>
           <select name="priorityLevel" id="priority" className="w-14">
-            <option value="P_0">P_0</option>
-            <option value="In P_1">P_1</option>
-            <option value="P_2">P_2</option>
-            <option value="P_3">P_3</option>
-            <option value="P_4">P_4</option>
+            <option value="Low">Low</option>
+            <option value="Medium">Medium</option>
+            <option value="High">High</option>
           </select>
         </div>
       </div>

@@ -18,10 +18,6 @@ const TaskForm = () => {
     const priority = taskPrioity.current.value;
     const description = taskDesc.current.value;
     dispatch(createTask({ assigneName, title, priority, description }));
-    taskAssigneName.current.value = "";
-    taskTitle.current.value = "";
-    taskPrioity.current.value = "";
-    taskDesc.current.value = "";
     navigate("/");
   }
 
@@ -44,7 +40,7 @@ const TaskForm = () => {
           type="text"
           id="input-priority"
           ref={taskPrioity}
-          placeholder="Priority"
+          placeholder="Choose Priority (Low,High,Medium) "
         />
       </div>
       <div className={`${style.half} ${style.right} ${style.cf}`}>

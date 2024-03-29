@@ -29,7 +29,7 @@ const BottomContainter = () => {
 const Container = ({ status }) => {
   const color = status[1];
   return (
-    <div className="min-w-full p-4 rounded-2xl h-96">
+    <div className="min-w-full p-4 min-h-64 rounded-2xl">
       <center
         className="w-full h-16 py-4 rounded-t-2xl"
         style={{ background: color }}
