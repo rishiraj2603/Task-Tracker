@@ -36,11 +36,7 @@ const Container = ({ status }) => {
       >
         {status[0]}
       </center>
-      {status[0] === "Pending" ? (
-        <TaskContainer status={status[0]}></TaskContainer>
-      ) : (
-        " "
-      )}
+      {status[0] === "Pending" ? <TaskContainer></TaskContainer> : " "}
     </div>
   );
 };
