@@ -42,6 +42,13 @@ const TaskForm = () => {
           ref={taskPrioity}
           placeholder="Choose Priority (Low,High,Medium) "
         />
+        <input
+          type="text"
+          id="input-status"
+          ref={taskPrioity}
+          className="hidden"
+          defaultValue="pending"
+        />
       </div>
       <div className={`${style.half} ${style.right} ${style.cf}`}>
         <textarea
@@ -52,7 +59,7 @@ const TaskForm = () => {
           placeholder="Description"
         ></textarea>
       </div>
-      <input type="submit" value="Submit" id="input-submit" />
+      <input type="submit" placeholder="Submit" id="input-submit" />
     </form>
   );
 };

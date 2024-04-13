@@ -16,7 +16,7 @@ const Sorting = () => {
         <input
           type="text"
           className="border-2 border-black"
-          placeholder="Assigne Name"
+          defaultValue="Assigne Name"
         />
         <div>
           <label htmlFor="priority">Priority: </label>
@@ -31,7 +31,7 @@ const Sorting = () => {
         <input
           type="text"
           name="daterange"
-          value="27/03/2024 - 04/01/2024"
+          defaultValue="27/03/2024 - 04/01/2024"
           className="w-48 "
         />
       </div>

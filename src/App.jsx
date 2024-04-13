@@ -3,7 +3,9 @@ import HomePage from "./HomePage";
 import TaskForm from "./components/Form/TaskForm";
 import { Route, Routes } from "react-router-dom";
 import FormEdit from "./components/Form/FormEdit";
+import ReactModal from "react-modal";
 
+ReactModal.setAppElement("#root");
 const App = () => {
   return (
     <div className="p-12 m-10">
